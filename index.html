@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="container">
+        <h5>Simple Calculator</h5>
+        <div class="calc-display">
+            <input id = "display" type="text" name="display" value="">
+        </div>
+
+        <div class="calc-num-pad">
+
+            <div class="line-1">
+                <input class = " yellow" type="button" value="AC" onclick="allClear()">
+                <input class = " yellow" type="button" value="DE" onclick="deleteItem()">
+                <input class = " yellow" type="button" value="." onclick="calcNumber('.')">
+                <input class = " yellow" type="button" value="/" onclick="calcNumber('/')">
+            </div>
+
+            <div class="line-2">
+                <input  type="button" value="7" onclick="calcNumber('7')">
+                <input  type="button" value="8" onclick="calcNumber('8')">
+                <input  type="button" value="9" onclick="calcNumber('9')">
+                <input class = "yellow" type="button" value="*" onclick="calcNumber('*')">
+            </div>
+
+            <div class="line-3">
+                <input  type="button" value="4" onclick="calcNumber('4')">
+                <input  type="button" value="5" onclick="calcNumber('5')">
+                <input  type="button" value="6" onclick="calcNumber('6')">
+                <input class = " yellow" type="button" value="-" onclick="calcNumber('-')">
+            </div>
+
+            <div class="line-4">
+                <input  type="button" value="1" onclick="calcNumber('1')">
+                <input  type="button" value="2" onclick="calcNumber('2')">
+                <input  type="button" value="3" onclick="calcNumber('3')">
+                <input class = " yellow" type="button" value="+" onclick="calcNumber('+')">
+            </div>
+
+            <div class="line-5">
+                <input  type="button" value="00" onclick="calcNumber('00')">
+                <input  type="button" value="0" onclick="calcNumber('0')">
+                <input class = " equal-btn" type="button" value="=" onclick="result()">
+            </div>
+
+        </div>
+
+    </div> 
+
+    <script src="calc.js"></script>
+</body>
+</html>
